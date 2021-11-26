@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cave</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+	body{
+	background-image: url("wall.jpg");
+	}
+</style>
+
+<body>
+<div style="background-image: princess.jpg">
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button id="1" style="margin:25px" type="button" style="background:cave.png" class="btn btn-light" onclick='onClick1()'> <img src="cave.png" width="300" height=190"> </button>
+  <button id="2" style="margin:25px" type="button" style="background:cave.png" class="btn btn-light" onclick='onClick2()'> <img src="cave.png" width="300" height=190"> </button>
+  <button id="3" style="margin:25px" type="button" style="background:cave.png" class="btn btn-light" onclick='onClick3()'> <img src="cave.png" width="300" height=190"> </button>
+  <button id="4" style="margin:25px" type="button" style="background:cave.png" class="btn btn-light" onclick='onClick4()'> <img src="cave.png" width="300" height=190"> </button>
+  <button id="5" style="margin:25px" type="button" style="background:cave.png" class="btn btn-light" onclick='onClick5()'> <img src="cave.png" width="300" height=190"> </button>
+
+</div>
+
+<h1 style="font-size:100px; color: black; text-align: center"><strong id="demo"></strong></h1>
+
+<script>
+
+function onClick1() {
+let num = Math.floor((Math.random() * 5) + 1);
+console.log(num);
+if (num == 1){
+	document.getElementById("demo").innerHTML = "Game Over!";
+  document.getElementById("demo").style.color = "Red";
+}
+else{
+	document.getElementById("demo").innerHTML = "You Move Forward!";
+  document.getElementById("demo").style.color = "Green";
+}
+}
+
+function onClick2() {
+let num = Math.floor((Math.random() * 5) + 1);
+console.log(num);
+if (num == 2){
+	document.getElementById("demo").innerHTML = "Game Over!";
+  document.getElementById("demo").style.color = "Red";
+}
+else{
+	document.getElementById("demo").innerHTML = "You Move Forward!";
+  document.getElementById("demo").style.color = "Green";
+}
+}
+
+function onClick3() {
+let num = Math.floor((Math.random() * 5) + 1);
+console.log(num);
+if (num == 3){
+	document.getElementById("demo").innerHTML = "Game Over!";
+  document.getElementById("demo").style.color = "Red";
+}
+else{
+	document.getElementById("demo").innerHTML = "You Move Forward!";
+  document.getElementById("demo").style.color = "Green";
+}
+}
+
+function onClick4() {
+let num = Math.floor((Math.random() * 5) + 1);
+console.log(num);
+if (num == 4){
+	document.getElementById("demo").innerHTML = "Game Over!";
+  document.getElementById("demo").style.color = "Red";
+}
+else{
+	document.getElementById("demo").innerHTML = "You Move Forward!";
+  document.getElementById("demo").style.color = "Green";
+}
+}
+
+function onClick5() {
+let num = Math.floor((Math.random() * 5) + 1);
+console.log(num);
+if (num == 5){
+	document.getElementById("demo").innerHTML = "Game Over!";
+  document.getElementById("demo").style.color = "Red";
+}
+else{
+	document.getElementById("demo").innerHTML = "You Move Forward!";
+  document.getElementById("demo").style.color = "Green";
+}
+}
+
+</script>
+</body>
+</html>
